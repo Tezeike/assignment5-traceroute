@@ -107,6 +107,7 @@ def get_route(hostname):
                 request_type, code, checksum, packetID, sequence = struct.unpack("bbHHh", icmpHeader)
                 #Fill in end
                 try: #try to fetch the hostname
+                    my_ip = socket.gethostbyname (self.my)
                     #Fill in start
                     #Fill in end
                 except herror:   #if the host does not provide a hostname
