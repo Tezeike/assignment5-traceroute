@@ -110,7 +110,7 @@ def get_route(hostname):
                     my_ip = socket.gethostbyname (self.my)
                     #Fill in start
                     #Fill in end
-                except herror:   #if the host does not provide a hostname
+                except error:   #if the host does not provide a hostname
                     #Fill in start
                     #Fill in end
 
